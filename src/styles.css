@@ -28,7 +28,6 @@ main {
 
 .jack_papel {
   position: relative;
-  padding:0;
   background: #ffffff url("Screenshot 2021-01-04 085530.png") no-repeat top center;
   background-size:cover!important;
   /*box-shadow: inset 0 0 10rem black; /* vignette */
@@ -43,6 +42,7 @@ main {
   font-family: 'Montserrat', sans-serif;
   font-size: 4.5em;
   margin: auto;
+  padding: 1rem;
 }
 
 .about {
@@ -70,7 +70,7 @@ main {
 }
 
 .center > h2 {
-  font-size: 3.5em;
+  font-size: 2.5em;
   padding: 2rem;
 }
 
