@@ -3,7 +3,7 @@ authors = ["Jack Papel <jackpapel@live.com>"]
 categories = ["wasm"]
 description = "Jack Papel's website"
 edition = "2021"
-license = "Apache-2.0/MIT"
+license = "MIT"
 name = "jack-papel-website"
 readme = "./README.md"
 repository = "https://github.com/Jack-Papel/jack-papel.github.io"
@@ -23,6 +23,7 @@ yew-router = "0.17.0"
 yew-hooks = "0.2.0"
 wasm-bindgen = "0.2"
 wasm-logger = "0.2.0"
+wasm-pack = "0.11.1"
 
 [dev-dependencies]
 wasm-bindgen-test = "0.3"
