@@ -1,0 +1,113 @@
+.shortcuts {
+  position: fixed;
+  width: 100%;
+  animation: nav-fade 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  text-shadow: 0px 0px 5px black;
+}
+
+@keyframes nav-fade {
+  0% {
+    opacity: 100%;
+    background: none;
+  }
+  20% {
+    opacity: 100%;
+  }
+  30% {
+    opacity: 0%;
+  }
+  99% {
+    opacity: 0%;
+    background: none;
+  }
+  100% {
+    opacity: 100%;
+    background: var(--primary);
+  }
+}
+
+.center {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .center {
+    width: 90%;
+  }
+}
+
+.center > p, .center > h2, .center > h1 {
+  padding: 1rem;
+}
+
+.center > h2 {
+  font-size: 2.5em;
+  text-decoration: underline;
+}
+
+.hero {
+  height: 100dvh;
+  width: 100dvw;
+  padding: 0;
+  margin: 0;
+}
+
+.hero > .hero-fade {
+  animation: fade 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--hero-parallax) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes fade {
+  to {
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(70%);
+  }
+}
+
+.hero > .hero-background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  z-index: -1;
+
+  animation: parallax 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--hero-parallax) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes parallax {
+  to {
+    object-position: bottom;
+  }
+}
+
+.links a {
+  text-shadow: 0px 0px 10px black;
+}
+
+.bottom-scroll-stop {
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+  width: 100dvw;
+  scroll-snap-align: end;
+}
+
+.highlight {
+  color: var(--highlight);
+}

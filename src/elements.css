@@ -1,0 +1,87 @@
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  position: relative;
+
+  --primary: #120D31;
+  --secondary: #9F9FED;
+  --background: #CDD1C4;
+  --background-transparent: #CDD1C4bb;
+  --highlight: #B5446E;
+  --utility: #6A7FDB;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+}
+
+tr {
+  width: 1fr;
+}
+
+td {
+  width: 1fr;
+}
+
+main {
+  color: var(--background);
+  font-size: 1.2em;
+}
+
+nav {
+  width: 100%;
+  z-index: 1;
+}
+
+nav > ul {
+  padding: 1rem 0;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+nav > ul > li {
+  display: inline-block;
+  margin: 0.5rem 1rem;
+}
+
+nav > ul > li::marker {
+  display: none;
+}
+
+nav a {
+  color: white;
+}
+
+
+a {
+  font-weight: bolder;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  animation: fade-in-color 0.05s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in-color {
+  to {
+    color: var(--utility);
+  }
+}

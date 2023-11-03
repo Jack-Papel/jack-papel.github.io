@@ -4,36 +4,132 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="src/styles.css">
+  <link rel="stylesheet" href="src/elements.css">
+  <link rel="stylesheet" href="src/classes.css">
+  <link rel="stylesheet" href="src/portfolio.css">
+  <link rel="stylesheet" href="src/sections.css">
   <title>Jack Papel</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <script src="./src/index.js"></script>
 </head>
 
 <body>
+  <nav class='shortcuts'>
+    <ul>
+      <li><a href='#jack-papel'>Links</a></li>
+      <li><a href='#about'>About</a></li>
+      <li><a href='#portfolio'>Portfolio</a></li>
+      <li><a href='#resume'>Skills</a></li>
+      <li><a href='#contact'>Contact</a></li>
+    </ul>
+  </nav>
   <main>
     <!-- <div class = "buttons_holder"></div> -->
-    <header class = "jack_papel">
-      <h1> 
-        Jack Papel
-      </h1>
-    </header>
-    <section class = "about">
-      <div class = "center">
-        <h2>Under Construction</h2>
-        <p>This website is under construction. <br>
-          In the meantime, here's a link to my 
-          <a href="https://www.linkedin.com/in/jackpapel/">Linkedin</a>
-          and one to my <a href="https://www.github.com/jack-papel">Github.</a>
+    <section id='jack-papel' class='hero'>
+      <img class='hero-background' src='./src/hero-background.jpg'>
+      <div class='hero-fade center'>
+        <h1>Jack Papel</h1>
+        <p>Student and Full-stack Developer</p>
+        <nav class='links'>
+          <ul>
+            <li><a href='https://www.linkedin.com/in/jackpapel/'>LinkedIn</a></li>
+            <li><a href='https://www.github.com/jack-papel'>Github</a></li>
+            <li><a>Something</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section id='about'>
+      <div class='center'>
+        <h2>About me</h2>
+        <p>
+          I am The Jack Papel. I enjoy <span class='highlight'>Jack Papeling</span>.
         </p>
       </div>
     </section>
-    <section class = "my-stuff">
+    <section id='portfolio'>
+      <div class='center'>
+        <h2>Portfolio</h2>
+        <p>
+          Here is a list of projects I've been working on:
+        </p>
+      </div>
+      <div class='cards'>
+        <article id='website-card'>
+          <header>
+            <h1>This website</h1>
+          </header>
+          <div>
+            Plain JS Static Web App to showcase my skills and projects.
+          </div>
+          <footer>HTML &bull; CSS &bull; JS &bull; Github Actions</footer>
+        </article>
+        <article id='mafia-card' onclick="window.open('https://mafia.mom', '_blank')">
+          <header>
+            <h1>Mafia</h1>
+          </header>
+          <div>
+            Online social deduction game.<br>
+            Requires deception and critical thinking to win.
+          </div>
+          <footer>Rust Backend &bull; Websockets &bull; Frontend &bull; TS &bull; React &bull; Github Actions</footer>
+        </article>
+        <article id='mlang-card' onclick='window.open("https://github.com/Jack-Papel/mlang", "_blank")'>
+          <header>
+            <h1>Mlang</h1>
+          </header>
+          <div>
+            Interpreted programming language.<br>
+            Ergonomic iteration and pattern matching.<br>
+            Online playground (currently offline).
+          </div>
+          <footer>Rust &bull; ASTs &bull; Token Parsing &bull; Yew &bull; WebAssembly &bull; HTML &bull; CSS </footer>
+        </article>
+        <article id='critical-shears-card'>
+          <header>
+            <h1>Critical Shears</h1>
+          </header>
+          <div>
+            Minecraft Mod.
+            Adds the ability to critically-shear sheep, which drops more wool.
+          </div>
+          <footer>Footer</footer>
+        </article>
+        <article id='jlang-card'>
+          <header>
+            <h1>Jlang</h1>
+          </header>
+          <div>
+            In-progress to-be-compiled programming language.
+          </div>
+          <footer>Rust &bull; LLVM &bull; ASTs &bull; Token Parsing &bull; TBD</footer>
+        </article>
+      </div>
     </section>
-    <script></script>
+    <section id='resume'>
+      <div class='center split-pane'>
+        <header>
+          <h2>Skills</h2>
+        </header>
+        <article>
+          <h2>These are my skills, yo!</h2>
+          <ul>
+            <li>Me being epic</li>
+            <li>Fornite</li>
+            <li>Gaming</li>
+            <li>Codeing</li>
+            <li>Codeing</li>
+            <li>Codeing</li>
+            <li>Codeing</li>
+          </ul>
+        </article>
+      </div>
+    </section>
   </main>
+  <div class='bottom-scroll-stop'></div>
 </body>
 
 </html>
