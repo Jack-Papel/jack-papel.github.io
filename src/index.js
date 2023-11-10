@@ -5,3 +5,9 @@ window.addEventListener('scroll', () => {
     element.style.setProperty('--hero-parallax', -rect.top / rect.height);
   }
 }, false);
+
+window.addEventListener('load', () => {
+  document.querySelectorAll('article').forEach(el => {
+    el.addEventListener('click', () => window.open(el.attributes.getNamedItem('href').value));
+  });
+})

@@ -17,9 +17,11 @@
   color: var(--primary);
   display: flex;
   flex-grow: 1;
+  flex-shrink: 1;
   flex-direction: column;
   min-width: 18rem;
-  width: calc(28% - 1rem);
+  --weight: 1;
+  width: calc(28% * var(--weight) - 1rem);
   min-height: calc();
   margin-right: 1rem;
   margin-bottom: 1rem;
@@ -29,19 +31,9 @@
   background-position: top;
 }
 
-.cards > article::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: var(--background-transparent);
-  backdrop-filter: blur(2px);
-  border-radius: 1rem;
-}
-
-.cards > article:hover {
+.cards > article[href]:hover {
   cursor: pointer;
+  outline: var(--secondary) solid 2px;
 }
 
 .cards > article > header {
@@ -54,16 +46,28 @@
   border-top-right-radius: 1rem;
 }
 
+.cards > article > header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--background-transparent);
+  backdrop-filter: blur(2px);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
 .cards > article > header > h1 {
   padding: 1rem;
   position: relative;
-  padding-bottom: 0;
   font-size: 2em;
 }
 
 .cards > article > div {
   padding: 1rem;
   position: relative;
+  background-color: var(--background);
 }
 
 .cards > article > footer {
@@ -72,7 +76,7 @@
   margin-top: auto;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  background: var(--background);
+  background: var(--secondary);
 }
 
 @media only screen and (max-width: 600px) {

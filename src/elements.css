@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
+  scroll-padding-top: 3rem;
 }
 
 body {
@@ -9,8 +10,7 @@ body {
   --primary: #120D31;
   --secondary: #9F9FED;
   --background: #CDD1C4;
-  --background-transparent: #CDD1C4bb;
-  --highlight: #B5446E;
+  --background-transparent: #CDD1C4cc;
   --utility: #6A7FDB;
 }
 
