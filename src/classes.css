@@ -47,7 +47,7 @@
   }
 }
 
-.center > p, .center > h2, .center > h1 {
+.center > * {
   padding: 1rem;
 }
 

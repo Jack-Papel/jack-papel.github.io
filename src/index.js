@@ -7,7 +7,7 @@ window.addEventListener('scroll', () => {
 }, false);
 
 window.addEventListener('load', () => {
-  document.querySelectorAll('article').forEach(el => {
+  document.querySelectorAll('article[href]').forEach(el => {
     el.addEventListener('click', () => window.open(el.attributes.getNamedItem('href').value));
   });
 })
