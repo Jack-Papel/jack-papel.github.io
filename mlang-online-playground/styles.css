@@ -10,6 +10,7 @@ body {
   --background: #CDD1C4;
   --background-transparent: #CDD1C4cc;
   --utility: #6A7FDB;
+  background-color: var(--primary);
 }
 
 header {
@@ -21,11 +22,12 @@ header {
 
 header > h1 {
     margin: auto;
+    text-align: center;
     color: var(--secondary)
 }
 
 main {
-    height: 80dvh;
+    min-height: fit-content;
     background-color: var(--background);
 }
 
@@ -48,20 +50,20 @@ nav > button {
 div.split {
     display: flex;
     flex-direction: row;
-}
-
-textarea:first-of-type {
-    margin-left: 1rem;
+    flex-wrap: wrap;
 }
 
 textarea {
-    width: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 40%;
     height: 50dvh;
     color: var(--background);
     background-color: var(--primary);
     font-size: 1.2em;
     font-family: 'Cousine', monospace;
     margin-top: 1rem;
+    margin-left: 1rem;
     margin-right: 1rem;
     padding: 1rem;
     border: none;
@@ -83,7 +85,6 @@ a {
 footer {
     margin-top: 1rem;
     padding: 1rem;
-    height: calc(30dvh - 9rem);
     background-color: var(--primary);
     color: var(--background);
 }
