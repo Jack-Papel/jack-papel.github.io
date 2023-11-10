@@ -1,0 +1,110 @@
+
+.cards {
+  display: flex;
+  width: calc(80% - 2rem);
+  max-width: 100%;
+  margin: auto;
+  background-color: var(--primary);
+  flex-flow: row wrap;
+  align-content: center;
+  padding-top: 1rem;
+  padding-left: calc(10% + 1rem);
+  padding-right: calc(10% + 1rem);
+}
+
+.cards > article {
+  position: relative;
+  color: var(--primary);
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-direction: column;
+  min-width: 18rem;
+  --weight: 1;
+  width: calc(28% * var(--weight) - 1rem);
+  min-height: calc();
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.cards > article[href]:hover {
+  cursor: pointer;
+  outline: var(--secondary) solid 2px;
+}
+
+.cards > article > header {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  align-items: end;
+  position: relative;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.cards > article > header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--background-transparent);
+  backdrop-filter: blur(2px);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.cards > article > header > h1 {
+  padding: 1rem;
+  position: relative;
+  font-size: 2em;
+}
+
+.cards > article > div {
+  padding: 1rem;
+  position: relative;
+  background-color: var(--background);
+}
+
+.cards > article > footer {
+  padding: 1rem;
+  position: relative;
+  margin-top: auto;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background: var(--secondary);
+}
+
+@media only screen and (max-width: 600px) {
+  .cards {
+    width: 100%;
+    border-radius: unset;
+    padding-left: 0;
+  }
+  .cards > article {
+    min-width: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+#website-card {
+  background-image: url(./portfolio/website-background.jpg);
+  background-position: bottom;
+}
+
+#mafia-card {
+  background-image: url(./portfolio/mafia-background.png);
+}
+
+#mlang-card {
+  background-image: url(./portfolio/mlang-background.png);
+}
+
+#critical-shears-card {
+  background-image: url(./portfolio/critical-shears-background.png);
+}

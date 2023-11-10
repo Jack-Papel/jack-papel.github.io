@@ -1,0 +1,78 @@
+section {
+  scroll-snap-align: start;
+  background-color: var(--background);
+  color: var(--primary);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  /* border-top: var(--primary) 1rem solid; */
+}
+
+#jack-papel {
+  display: flex;
+  border-top: none;
+  flex-direction: row;
+  align-items: center;
+  background: radial-gradient(closest-side, rgba(0,0,0,0.6), rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+  box-shadow: inset rgba(0,0,0,0.2) 0px 0px 100px;
+}
+
+#jack-papel > div {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  text-align: center;
+  color: white;
+}
+
+#jack-papel > div > h1 {
+  font-size: 4.5em;
+}
+#jack-papel > div > p {
+  font-size: 1.5em;
+}
+
+@media only screen and (max-width: 900px) {
+  #jack-papel > div > h1 {
+    font-size: 3.5em;
+  }
+  #jack-papel > div > p {
+    font-size: 1.25em;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #jack-papel > div > h1 {
+    font-size: 3em;
+  }
+  #jack-papel > div > p {
+    font-size: 1.2em;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #jack-papel > div > h1 {
+    font-size: 2.5em;
+  }
+  #jack-papel > div > p {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 340px) {
+  #jack-papel > div > h1 {
+    font-size: 2.5em;
+  }
+  #jack-papel > div > p {
+    font-size: 1em;
+  }
+}
+
+#about {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+#portfolio {
+  padding-bottom: 0;
+}
+
+#resume {
+  border-top: none;
+}
