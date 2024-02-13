@@ -6,13 +6,14 @@ html {
 
 @media (pointer: coarse) {
   html, body {
-    overflow: auto;
+    overflow-y: auto;
     scroll-snap-type: none;
   }
 }
 
 body {
   position: relative;
+  overflow-x: hidden;
 
   --primary: #120D31;
   --secondary: #9F9FED;
@@ -55,7 +56,7 @@ nav {
 
 nav > ul {
   padding: 1rem 0;
-  max-width: 100vw;
+  max-width: 100svw;
   margin: 0;
   display: flex;
   flex-flow: row wrap;
@@ -92,4 +93,22 @@ a:hover {
   to {
     color: var(--utility);
   }
+}
+
+::-webkit-scrollbar {
+    width: .3rem;
+    height: .3rem;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #2b2b2b;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #616161;
+    border-radius: .4rem;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #a1a1a1;
 }

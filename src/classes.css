@@ -58,7 +58,7 @@
 
 .hero {
   height: 100vh;
-  width: 100vw;
+  width: 100svw;
   padding: 0;
   margin: 0;
 }
@@ -108,7 +108,7 @@
   position: absolute;
   bottom: 0;
   height: 1px;
-  width: 100vw;
+  width: 100svw;
   scroll-snap-align: end;
 }
 

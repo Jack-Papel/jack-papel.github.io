@@ -76,7 +76,7 @@ textarea {
     resize: none;
     height: 100%;
     white-space: pre;
-    overflow: scroll;
+    overflow-y: scroll;
     overflow-wrap: normal;
 }
 
