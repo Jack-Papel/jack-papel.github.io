@@ -53,11 +53,6 @@ main {
   font-size: 1.2em;
 }
 
-nav {
-  /* width: 100%; */
-  z-index: 1;
-}
-
 nav > ul {
   padding: 1rem 0;
   max-width: 100svw;
