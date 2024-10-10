@@ -15,11 +15,15 @@ body {
   position: relative;
   overflow-x: hidden;
 
-  --primary: #120D31;
+  --t: #CDD1C4;
+  --text: var(--t);
   --secondary: #9F9FED;
-  --background: #CDD1C4;
+  --b: #120D31;
+  --background: var(--b);
   --background-transparent: #CDD1C4cc;
   --utility: #6A7FDB;
+
+  background-color: var(--background);
 }
 
 * {
@@ -82,6 +86,7 @@ a {
   font-weight: bolder;
   font-family: inherit;
   text-decoration: none;
+  color: var(--utility)
 }
 
 a:hover {

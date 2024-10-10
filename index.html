@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="src/classes.css">
   <link rel="stylesheet" href="src/portfolio.css">
   <link rel="stylesheet" href="src/sections.css">
+  <link rel="stylesheet" href="src/hero.css">
   <title>Jack Papel</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,10 +37,9 @@
     </ul>
   </nav>
   <main>
-    <!-- <div class = "buttons_holder"></div> -->
-    <section id='jack-papel' class='hero'>
+    <div id='jack-papel' class='hero'>
       <img class='hero-background' src='./src/hero-background.jpg'>
-      <div class='hero-fade center'>
+      <div class='hero-fade hero-center'>
         <h1>Jack Papel</h1>
         <p>Student and Full-stack Developer</p>
         <nav class='links'>
@@ -49,9 +49,9 @@
           </ul>
         </nav>
       </div>
-    </section>
-    <section id='about'>
-      <div class='center'>
+    </div>
+    <div class="sections">
+      <section id='about' class="center">
         <h2>About me</h2>
         <p>
           I'm a <span class='highlight'>developer</span>, 
@@ -63,73 +63,52 @@
           <br><br>
           This website is still under construction for the moment, so I'll have much more to share in the future!
         </p>
-      </div>
-    </section>
-    <section id='portfolio'>
-      <div class='center'>
+      </section>
+      <section id='portfolio' class="inverted center">
         <h2>Port&shy;folio</h2>
         <p>
-          Here is a list of projects I've been working on:
+          You can find my full experience by visiting my
+          <a href='https://www.linkedin.com/in/jackpapel/'>LinkedIn</a> or my
+          <a href='https://www.github.com/jack-papel'>Github</a>, but here is a shortlist of some of the projects I have worked on:
         </p>
-      </div>
-      <div class='cards'>
-        <article id='website-card' style='--weight: 0.8' href='https://github.com/Jack-Papel/jackpapel-com'>
-          <header>
-            <h1>This website</h1>
-          </header>
-          <div>
-            Plain JS Static Web App to showcase my skills and projects.
-          </div>
-          <footer>HTML &bull; CSS &bull; JS &bull; Github Actions</footer>
-        </article>
-        <article id='mafia-card' href='https://mafia.jackpapel.com'>
-          <header>
-            <h1>Midnight Machinations</h1>
-          </header>
-          <div>
-            Online social deduction game.
-            Requires deception and critical thinking to win.
-          </div>
-          <footer>Rust Backend &bull; Websockets &bull; TS Frontend &bull; React &bull; Github Actions</footer>
-        </article>
-        <article id='mlang-card' href='mlang-online-playground/'>
-          <header>
-            <h1>Mlang</h1>
-          </header>
-          <div>
-            Interpreted programming language.
-            Ergonomic iteration and pattern matching.
-            Online playground.
-          </div>
-          <footer>Rust &bull; ASTs &bull; Token Parsing &bull; Yew &bull; WebAssembly &bull; HTML &bull; CSS </footer>
-        </article>
-        <!--
-        <article id='critical-shears-card' style='--weight: 0.3'>
-          <header>
-            <h1>Critical Shears</h1>
-          </header>
-          <div>
-            Minecraft Mod.
-            Adds the ability to critically-shear sheep, which drops more wool.
-          </div>
-          <footer>Footer</footer>
-        </article>
-        <article id='jlang-card'>
-          <header>
-            <h1>Jlang</h1>
-          </header>
-          <div>
-            In-progress to-be-compiled programming language.
-          </div>
-          <footer>Rust &bull; LLVM &bull; ASTs &bull; Token Parsing &bull; TBD</footer>
-        </article>
-        -->
-      </div>
-    </section>
-    <section id='under-construction'>
-      <div class='center'>
+      </section>
+      <section id='portfolio-cards' class="breakout">
+        <div class="cards">
+          <article id='website-card' style='--weight: 0.8' href='https://github.com/Jack-Papel/jackpapel-com'>
+            <header>
+              <h1>This website</h1>
+            </header>
+            <div>
+              Plain JS Static Web App to showcase my skills and projects.
+            </div>
+            <footer>HTML &bull; CSS &bull; JS &bull; Github Actions</footer>
+          </article>
+          <article id='mafia-card' href='https://mafia.jackpapel.com'>
+            <header>
+              <h1>Midnight Machinations</h1>
+            </header>
+            <div>
+              Online social deduction game.
+              Requires deception and critical thinking to win.
+            </div>
+            <footer>Rust Backend &bull; Websockets &bull; TS Frontend &bull; React &bull; Github Actions</footer>
+          </article>
+          <article id='mlang-card' href='mlang-online-playground/'>
+            <header>
+              <h1>Mlang</h1>
+            </header>
+            <div>
+              Interpreted programming language.
+              Ergonomic iteration and pattern matching.
+              Online playground.
+            </div>
+            <footer>Rust &bull; ASTs &bull; Token Parsing &bull; Yew &bull; WebAssembly &bull; HTML &bull; CSS </footer>
+          </article>
+        </div>
+      </section>
+      <section id='under-construction' class="inverted center">
         <h2>
-          Under Construc&shy;tion
+          Under Con&shy;struc&shy;tion
         </h2>
         <p>
           This website is still under construction. Information about my experience and skills, 
@@ -137,8 +116,8 @@
           <a href='https://www.linkedin.com/in/jackpapel/'>LinkedIn</a> or my
           <a href='https://www.github.com/jack-papel'>Github</a>.
         </p>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
   <div class='bottom-scroll-stop'></div>
 </body>

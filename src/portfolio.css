@@ -1,34 +1,29 @@
 
 .cards {
   display: flex;
-  width: calc(80% - 2rem);
-  max-width: 100%;
   margin: auto;
-  background-color: var(--primary);
   flex-flow: row wrap;
   align-content: center;
-  padding-top: 1rem;
-  padding-left: calc(10% + 1rem);
-  padding-right: calc(10% + 1rem);
+  padding: 1rem 0;
+  gap: 1rem;
 }
 
 .cards > article {
   position: relative;
-  color: var(--primary);
   display: flex;
   flex-grow: 1;
   flex-shrink: 1;
   flex-direction: column;
-  min-width: 18rem;
+  min-width: 20ch;
   --weight: 1;
   width: calc(28% * var(--weight) - 1rem);
   min-height: calc();
-  margin-right: 1rem;
-  margin-bottom: 1rem;
   border-radius: 1rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  background-color: var(--background);
+  color: var(--text);
 }
 
 .cards > article[href]:hover {
@@ -77,19 +72,6 @@
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   background: var(--secondary);
-}
-
-@media only screen and (max-width: 600px) {
-  .cards {
-    width: 100%;
-    border-radius: unset;
-    padding-left: 0;
-  }
-  .cards > article {
-    min-width: none;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
 }
 
 #website-card {
