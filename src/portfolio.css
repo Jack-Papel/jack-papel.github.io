@@ -24,11 +24,12 @@
   background-position: top;
   background-color: var(--background);
   color: var(--text);
+  outline: var(--goldish) solid 2px;
 }
 
 .cards > article[href]:hover {
   cursor: pointer;
-  outline: var(--secondary) solid 2px;
+  --background-transparent: rgba(from var(--blackish) r g b / 0.3);
 }
 
 .cards > article > header {
@@ -57,6 +58,7 @@
   padding: 1rem;
   position: relative;
   font-size: 2em;
+  color: var(--goldish);
 }
 
 .cards > article > div {
@@ -71,7 +73,7 @@
   margin-top: auto;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  background: var(--secondary);
+  background: var(--goldish);
 }
 
 #website-card {
@@ -87,6 +89,10 @@
   background-image: url(./portfolio/mlang-background.png);
 }
 
-#critical-shears-card {
-  background-image: url(./portfolio/critical-shears-background.png);
+#paradise-lost-card {
+  background-image: url(./portfolio/paradise-lost-background.webp);
+}
+
+#symphoxy-card {
+  background-image: url(./portfolio/symphoxy-background.png);
 }

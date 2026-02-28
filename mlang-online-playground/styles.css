@@ -32,8 +32,8 @@
     flex-direction: column;
     background-color: var(--secondary);
     border-radius: 1rem;
-    --background: var(--b);
-    --text: var(--t);
+    --background: var(--blackish);
+    --text: var(--whitish);
     color: var(--background);
     flex-grow: 1;
     min-height: 30rem;

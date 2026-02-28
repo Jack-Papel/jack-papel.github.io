@@ -33,6 +33,7 @@ section > h2 {
   font-size: 2.5em;
   text-decoration: underline;
   padding: 0 0 2rem;
+  color: var(--title-text);
 }
 
 section {
@@ -44,8 +45,9 @@ section {
 
 section.inverted,
 .cards > article {
-  --background: var(--t);
-  --text: var(--b);
+  --background: var(--whitish);
+  --title-text: var(--blackish);
+  --text: black
 }
 
 #portfolio-cards {

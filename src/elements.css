@@ -1,27 +1,16 @@
-html {
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-  scroll-padding-top: 3rem;
-}
-
-@media (pointer: coarse) {
-  html, body {
-    overflow-y: auto;
-    scroll-snap-type: none;
-  }
-}
-
 body {
   position: relative;
   overflow-x: hidden;
 
-  --t: #CDD1C4;
-  --text: var(--t);
-  --secondary: #9F9FED;
-  --b: #120D31;
-  --background: var(--b);
-  --background-transparent: #CDD1C4cc;
-  --utility: #6A7FDB;
+  --whitish: #ffffff;
+  --goldish: #e7d192;
+  --title-text: var(--whitish);
+  --text: var(--whitish);
+  --secondary: var(--goldish);
+  --blackish: #291a76;
+  --background: var(--blackish);
+  --background-transparent: rgba(from var(--blackish) r g b / 0.6);
+  --utility: #6460b6;
 
   background-color: var(--background);
 }

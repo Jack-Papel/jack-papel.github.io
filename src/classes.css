@@ -10,26 +10,10 @@
 }
 
 @keyframes nav-fade {
-  0% {
-    opacity: 100%;
+  0%, 30% {
     background: none;
   }
-  20% {
-    opacity: 100%;
-  }
-  30% {
-    opacity: 0%;
-  }
-  59% {
-    opacity: 0%;
-    background: none;
-  }
-  60% {
-    opacity: 100%;
-    background: var(--background);
-  }
-  100% {
-    opacity: 100%;
+  59%, 100% {
     background: var(--background);
   }
 }
@@ -113,5 +97,5 @@
 }
 
 .highlight {
-  color: var(--secondary);
+  color: var(--goldish);
 }
