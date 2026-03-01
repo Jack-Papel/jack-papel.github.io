@@ -10,7 +10,7 @@ body {
   --blackish: #291a76;
   --background: var(--blackish);
   --background-transparent: rgba(from var(--blackish) r g b / 0.6);
-  --utility: #6460b6;
+  --utility: #746dff;
 
   background-color: var(--background);
 }

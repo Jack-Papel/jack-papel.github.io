@@ -47,7 +47,11 @@ section.inverted,
 .cards > article {
   --background: var(--whitish);
   --title-text: var(--blackish);
-  --text: black
+  --text: black;
+}
+
+section.inverted {
+  --goldish: #edb721;
 }
 
 #portfolio-cards {
