@@ -57,3 +57,27 @@ section.inverted {
 #portfolio-cards {
   padding: 0;
 }
+
+#about {
+  position: relative;
+}
+
+#about > img {
+  position: absolute;
+  width: 12rem;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#about > * {
+  width: calc(100% - 14rem);
+}
+@media only screen and (max-width: 600px) {
+  #about > img {
+    display: none;
+  }
+  #about > * {
+    width: 100%;
+  }
+}
