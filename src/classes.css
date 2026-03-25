@@ -48,7 +48,7 @@
   margin: 0;
 }
 
-.hero > .hero-fade {
+.hero-fade {
   animation: fade 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
   animation-play-state: paused;
   animation-delay: calc(var(--hero-parallax) * -1s);
@@ -64,7 +64,8 @@
   }
 }
 
-.hero > .hero-background {
+.hero-background,
+#about > img.hero-background {
   position: fixed;
   width: 100%;
   height: 100%;

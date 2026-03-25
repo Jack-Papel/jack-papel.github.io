@@ -1,0 +1,11 @@
+{
+    "[html]": {
+        "editor.indentSize": 2,
+    },
+    "[css]": {
+        "editor.indentSize": 2,
+    },
+    "[javascript]": {
+        "editor.indentSize": 2,
+    }
+}

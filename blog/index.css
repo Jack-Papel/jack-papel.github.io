@@ -1,0 +1,23 @@
+#about {
+  background: radial-gradient(closest-side, rgba(0,0,0,0.6), rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+  box-shadow: inset rgba(0,0,0,0.2) 0px 0px 100px;
+}
+
+.text-body * {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-body h2,
+.text-body h3 {
+  text-decoration: none;
+}
+
+.date {
+  font-size: 0.9em;
+  color: var(--goldish);
+  font-weight: bold;
+}
+
+.date + h2 {
+  padding-top: 0;
+}
