@@ -21,3 +21,65 @@
 .date + h2 {
   padding-top: 0;
 }
+
+p {
+  text-align: justify;
+  line-height: 1.15em;
+}
+
+code {
+  font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+  background-color: var(--blackish);
+  border-radius: 5px;
+  color: #efefef;
+  padding: 0 0.25rem;
+}
+
+p.cite {
+  padding-left: 3em;
+  text-indent: -3em;
+}
+
+p > img {
+  float: right;
+  width: min(30rem, 60%);
+  margin-left: 1rem;
+}
+
+ul {
+  padding-left: 2em;
+  line-height: 1.15em;
+}
+
+p + .four-square {
+  margin-top: 1rem;
+}
+
+.four-square + p {
+  margin-top: 1rem;
+}
+
+.four-square {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.four-square > img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+section img {
+  width: 100%;
+}
+
+p + img {
+  margin-top: 1rem;
+}
+
+img + p {
+  margin-top: 1rem;
+}
