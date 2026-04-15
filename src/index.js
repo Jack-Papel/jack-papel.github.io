@@ -8,6 +8,12 @@ window.addEventListener('scroll', () => {
 
 window.addEventListener('load', () => {
   document.querySelectorAll('article[href]').forEach(el => {
-    el.addEventListener('click', () => window.open(el.attributes.getNamedItem('href').value));
+    el.addEventListener('click', e => {
+      if (e.ctrlKey) {
+        window.open(el.attributes.getNamedItem('href').value)
+      } else {
+        window.location.href = el.attributes.getNamedItem('href').value;
+      }
+    });
   });
 })
