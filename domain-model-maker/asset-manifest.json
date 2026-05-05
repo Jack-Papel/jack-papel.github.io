@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/domain-model-maker/static/css/main.0cb6bc13.css",
+    "main.js": "/domain-model-maker/static/js/main.74a61574.js",
+    "static/media/server_bg.wasm": "/domain-model-maker/static/media/server_bg.f98bb58eecc9e632d104.wasm",
+    "index.html": "/domain-model-maker/index.html",
+    "main.0cb6bc13.css.map": "/domain-model-maker/static/css/main.0cb6bc13.css.map",
+    "main.74a61574.js.map": "/domain-model-maker/static/js/main.74a61574.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0cb6bc13.css",
+    "static/js/main.74a61574.js"
+  ]
+}
