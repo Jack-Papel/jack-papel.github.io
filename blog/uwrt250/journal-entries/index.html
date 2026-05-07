@@ -30,6 +30,7 @@
 </head>
 
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <nav class='shortcuts'>
     <ul>
       <li><a href='/'>Homepage</a></li>
@@ -38,10 +39,10 @@
       <li><a href='#contact'>Contact</a></li>
     </ul>
   </nav>
-  <main>
+  <main id="main-content" tabindex="-1">
     <div class="sections">
       <section id='about' class="center">
-        <img class='hero-background' src='/src/hero-background.jpg'>
+        <img class='hero-background' src='/src/hero-background.jpg' alt="Sunny forest background">
         <h2>Jack Papel</h2>
         <p>
           I'm a <span class='highlight'>developer</span>, 
@@ -49,7 +50,7 @@
           <span class='highlight'>mathematician</span>
           interested in providing accessible and engaging experiences via code.
         </p>
-        <img src="/src/jackpapelportrait.jpeg" />
+        <img src="/src/jackpapelportrait.jpeg" alt="Jack Papel portrait"/>
       </section>
       <section class="inverted center">
         <h2>Journal Entries</h2>
@@ -67,6 +68,24 @@
               A plan for the structure and content of my class website.
             </div>
             <footer>Web Development &bull; Writing</footer>
+          </article>
+          <article id='extended-design-statement' style='--weight: 1.6' href='/blog/uwrt250/journal-entries/extended-design-statement'>
+            <header>
+              <h1>Extended Design Statement</h1>
+            </header>
+            <div>
+              An extended statement on the design principles and considerations for this website.
+            </div>
+            <footer>Web Development &bull; Accessibility</footer>
+          </article>
+          <article id='writing-pedagogy' style='--weight: 1.6' href='/blog/uwrt250/journal-entries/writing-pedagogy'>
+            <header>
+              <h1>Reflection on You Can Learn to Write in General and Writing Knowledge Transfers Easily</h1>
+            </header>
+            <div>
+              A reflection on two segments of the book Bad Ideas About Writing, and their relation to our class threshold concepts.
+            </div>
+            <footer>Writing &bull; Pedagogy &bull; AI</footer>
           </article>
         </div>
       </section>

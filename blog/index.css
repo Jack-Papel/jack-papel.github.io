@@ -83,3 +83,29 @@ p + img {
 img + p {
   margin-top: 1rem;
 }
+
+ul + p {
+  margin-top: 1rem;
+}
+
+#uwrt250 {
+  background-position: center;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6b/Rochester_Institute_of_Technology_50.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original")
+}
+
+#writing-in-software-development {
+  background-image: url(/blog/uwrt250/github-contributions.png);
+}
+
+#writing-in-a-development-team {
+  background-image: url(/blog/uwrt250/writing-in-a-development-team/activity-system.png);
+}
+
+#extended-design-statement {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/79/Accessibility.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original");
+}
+
+#writing-pedagogy, #reflection {
+  background-position: center;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/54/Yellow_HB_pencils.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original");
+}
