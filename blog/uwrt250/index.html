@@ -29,6 +29,7 @@
 </head>
 
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <nav class='shortcuts'>
     <ul>
       <li><a href='/'>Homepage</a></li>
@@ -36,10 +37,10 @@
       <li><a href='#contact'>Contact</a></li>
     </ul>
   </nav>
-  <main>
+  <main id="main-content" tabindex="-1">
     <div class="sections">
       <section id='about' class="center">
-        <img class='hero-background' src='/src/hero-background.jpg'>
+        <img class='hero-background' src='/src/hero-background.jpg' alt="Sunny forest background">
         <h2>Jack Papel</h2>
         <p>
           I'm a <span class='highlight'>developer</span>, 
@@ -47,10 +48,10 @@
           <span class='highlight'>mathematician</span>
           interested in providing accessible and engaging experiences via code.
         </p>
-        <img src="/src/jackpapelportrait.jpeg" />
+        <img src="/src/jackpapelportrait.jpeg" alt="Jack Papel portrait"/>
       </section>
-      <section id='posts' class="inverted center">
-        <h2>UWRT-250</h2>
+      <section id='posts' class="text-body inverted center">
+        <h2>The Archive (UWRT-250)</h2>
         <p>
           For Advanced Writing Seminar, a class I took at RIT about writing in one's discipline,
           the final project was to create a website detailing our semester's work.
@@ -60,20 +61,34 @@
         <h3>Abstract</h3>
         <p>
           This project is a website for exploring how writing is used in software development.
-          It includes essays about what it means to write in software development&mdash;namely
-          its role as a fundamental aspect of the discipline, and the role it takes on in a
-          development team.
+          It includes two major essays about what it means to write in software development.
+          The first covers its role as a fundamental aspect of the discipline: how it impels us to
+          write understandable code; the use of multimodal communication to express ideas 
+          (particularly via code comments); the importance of code review and feedback; and how AI
+          affects the role writing plays without reducing its importance.
+          The second is an auxiliary piece which covers the role writing takes on in a development
+          team specifically, and how that differs from software development as a whole: how it 
+          constitutes dev teams; its use to facilitate and define collaboration within a team, how
+          identity and power is constructed through writing; and more. Much like the first essay,
+          it also talks about how AI affects writing's role in a dev team, and how its effects on
+          the structure of a development team are much more substantial.
+          It also contains journal entries and artifacts which document my experience in the class 
+          and reflect on the creation of the projects and what I learned.
         </p>
         <h3>Design Statement</h3>
         <p>
           I intend for this project, as well as all of my blog posts, to be as accessible as possible.
           Some design considerations I've made for accessbility include:
-          <ul>
-            <li>Accessible colors</li>
-            <li>Navbar for easy navigation</li>
-            <li>"Skip to Content" button for keyboard users</li>
-            <li>Alt text for all images</li>
-          </ul>
+        </p>
+        <ul>
+          <li>Accessible colors</li>
+          <li>Navbar for easy navigation</li>
+          <li>"Skip to Content" button for keyboard users</li>
+          <li>Alt text for all images</li>
+        </ul>
+        <p>
+          See the <a href='/blog/uwrt250/journal-entries/extended-design-statement'>Extended Design Statement</a>
+          for more details on how this site was designed for accessibility and inclusivity.
         </p>
       </section>
       <section id='portfolio-cards' class="breakout">

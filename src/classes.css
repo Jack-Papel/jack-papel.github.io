@@ -139,3 +139,20 @@
   text-align: center;
   position: relative;
 }
+
+.skip-link {
+  position: absolute;
+  top: -1000px; /* Moves it off-screen */
+  left: 0;
+  background: var(--blackish);
+  border-radius: 0.5rem;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0; /* Moves it back into view when tabbed to */
+  margin: 1rem;
+  outline: 3px solid var(--goldish);
+}
